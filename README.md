@@ -9,19 +9,32 @@ You must provide a configuration file with the .nts extension which is made of t
 
 Once the program is launched, it prints the value of each output added to the circuit and then the user can enter commands to continue its simulations.
 These commands are:
+
     simulate
+    
     display
+    
     inputname=value {-1, 0, 1}
+    
     exit
 
 Example of a configuration file:
 
 .chipsets:
+
 input a
+
 input b
+
 4081 andgate
+
 output c
+
 .links:
+
 a:1 andgate:1
+
 b:1 andgate:2
+
 andgate:3 c:1
+
